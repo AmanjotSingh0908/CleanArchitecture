@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/user", userRouter);
 
 mongoose
-  .connect("MONGO_URL")
+  .connect("MONGO_URL/CleanArchitecture")
   .then((conn) => console.log("DB connected"))
   .catch((err) => console.log(err));
 
